@@ -91,3 +91,64 @@ buttonFifth.addEventListener("click", () => {
     buttonFourth.style.backgroundColor = "#959595"
     buttonFifth.style.backgroundColor = "#dd0426"
 })
+
+peopleSlider = document.getElementById('peopleSlider');
+
+buttonOne = document.getElementById('sliderPeopleOne');
+buttonTwo = document.getElementById('sliderPeopleTwo');
+buttonThree = document.getElementById('sliderPeopleThree');
+
+moveRight = 100
+
+buttonOne.addEventListener("click", () => {
+    peopleSlider.style.right = 0 + "%"
+
+    buttonOne.style.backgroundColor = "#dd0426"
+    buttonTwo.style.backgroundColor = "#9F9F9F"
+    buttonThree.style.backgroundColor = "#9F9F9F"
+})
+buttonTwo.addEventListener("click", () => {
+    peopleSlider.style.right = moveRight + "%"
+
+    buttonOne.style.backgroundColor = "#9F9F9F"
+    buttonTwo.style.backgroundColor = "#dd0426"
+    buttonThree.style.backgroundColor = "#9F9F9F"
+})
+buttonThree.addEventListener("click", () => {
+    peopleSlider.style.right = moveRight * 2 + "%"
+
+    buttonOne.style.backgroundColor = "#9F9F9F"
+    buttonTwo.style.backgroundColor = "#9F9F9F"
+    buttonThree.style.backgroundColor = "#dd0426"
+})
+
+podcastSlider = document.getElementById('sliderPodcast');
+
+buttonPodcastOne = document.getElementById('sliderPodcastOne');
+buttonPodcastTwo = document.getElementById('sliderPodcastTwo');
+buttonPodcastThree = document.getElementById('sliderPodcastThree');
+
+movePodcastRight = 68.48958333 + 3.671875 * 2
+
+buttonPodcastOne.addEventListener("click", () => {
+    podcastSlider.style.right = 3.671875 + "vw"
+
+    buttonPodcastOne.style.backgroundColor = "#dd0426"
+    buttonPodcastTwo.style.backgroundColor = "#9F9F9F"
+    buttonPodcastThree.style.backgroundColor = "#9F9F9F"
+})
+buttonPodcastTwo.addEventListener("click", () => {
+    podcastSlider.style.right = 3.671875 + movePodcastRight + "vw"
+
+    buttonPodcastOne.style.backgroundColor = "#9F9F9F"
+    buttonPodcastTwo.style.backgroundColor = "#dd0426"
+    buttonPodcastThree.style.backgroundColor = "#9F9F9F"
+})
+buttonPodcastThree.addEventListener("click", () => {
+    podcastSlider.style.right = 3.671875 + movePodcastRight * 2 + "vw"
+
+    buttonPodcastOne.style.backgroundColor = "#9F9F9F"
+    buttonPodcastTwo.style.backgroundColor = "#9F9F9F"
+    buttonPodcastThree.style.backgroundColor = "#dd0426"
+})
+//linear-gradient(180deg, hsla(0, 0%, 100%, 0), #000000);
