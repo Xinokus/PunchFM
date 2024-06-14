@@ -10,15 +10,43 @@
     <header>
         <nav>
             <div class="nav_logo">
-                <a href=""><img src="img/PUNCHFM.png" alt=""></a>
+                <a href="index.html"><img src="img/PUNCHFM.png" alt=""></a>
             </div>
             <div class="nav_current_audio">
-                <audio src=""></audio>
+                <div class="nav_audio_play">
+                    <img src="img/play.png" alt="" onclick="playButtonPress()" id="playButton">
+                </div>
+                <div class="nav_audio_song">
+                    <div class="nav_audio_logo">
+                        <div class="audio_logo">
+                            <img src="img/music_logo.png" alt="">
+                        </div>
+                        <div class="audio_text">
+                            <p>Поезд сделал бум!</p>
+                            <p>Колов Дють</p>
+                        </div>
+                    </div>
+                    <div class="nav_audio_volume">
+                        <div class="audio_input">
+                            <input type="range" name="" id="songVolume" onclick="changeVolume()">
+                        </div>
+                        <div class="audio_volume_text">
+                            <p id="volumePercent">100%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_audio_reacts">
+                    <div class="share"></div>
+                    <div class="heart"></div>
+                </div>
+                <audio controls style="display: none;">
+                    <source src="img/Lobotomy Corporation OST - Binah Suppression (Sephirah Meltdown Theme).mp3" type="audio/mpeg">
+                </audio>
             </div>
             <div class="nav_city">
                 <div id="city">
                     <img src="img/arrow_red.png" alt="">
-                    <p>Москва / 102.3</p>
+                    <p id="cityMain">Москва / 102.3</p>
                 </div>
             </div>
             <div class="nav_links">
@@ -39,17 +67,17 @@
                 </div>
             </div>
             <div class="nav_city_choose" id="nav_city_choose">
-                <p>Москва / 102.3</p>
-                <p>Санкт-Петербург / 102.3</p>
-                <p>Калининград / 102.3</p>
-                <p>Владивосток / 102.3</p>
-                <p>Нижний Новгород / 102.3</p>
-                <p>Казань / 102.3</p>
-                <p>Краснодар / 102.3</p>
-                <p>Екатеринбург / 102.3</p>
-                <p>Уфа / 102.3</p>
-                <p>Ростов-на-Дону / 102.3</p>
-                <p>Омск / 102.3</p>
+                <p class="cityNumber">Москва / 102.3</p>
+                <p class="cityNumber">Санкт-Петербург / 102.3</p>
+                <p class="cityNumber">Калининград / 102.3</p>
+                <p class="cityNumber">Владивосток / 102.3</p>
+                <p class="cityNumber">Нижний Новгород / 102.3</p>
+                <p class="cityNumber">Казань / 102.3</p>
+                <p class="cityNumber">Краснодар / 102.3</p>
+                <p class="cityNumber">Екатеринбург / 102.3</p>
+                <p class="cityNumber">Уфа / 102.3</p>
+                <p class="cityNumber">Ростов-на-Дону / 102.3</p>
+                <p class="cityNumber">Омск / 102.3</p>
             </div>
             <div class="nav_navigation_choose" id="nav_navigation_choose">
                 <a href=""><p>Главная</p></a>
@@ -83,6 +111,10 @@
                 <div class="header_slider_button four" id="four"></div>
                 <div class="header_slider_button five" id="five"></div>
             </div>
+        </div>
+        <div class="preloads">
+            <div></div>
+            <div></div>
         </div>
     </header>
     <main>

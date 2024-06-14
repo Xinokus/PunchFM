@@ -35,6 +35,126 @@ nav{
 .nav_current_audio{
     width: 34vw;
     height: 6.25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_audio_song{
+    margin-top: 0.7vw;
+}
+.nav_audio_play{
+    width: 5.625vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_audio_play img{
+    width: 3.75vw;
+    height: 3.75vw;
+    cursor: pointer;
+    background-image: url(img/pause.png);
+    background-size: cover;
+}
+.nav_audio_logo{
+    width: 14.84375vw;
+    height: 2.70833vw;
+    display: flex;
+}
+.audio_logo{
+    width: 3.125vw;
+    height: 2.70833vw;
+}
+.audio_logo img{
+    width: 2.70833vw;
+    height: 2.70833vw;
+}
+.audio_text{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    color: #747B83;
+}
+.audio_text p:first-of-type{
+    font-size: 1.25vw;
+    font-weight: 500;
+}
+.audio_text p:last-of-type{
+    font-size: 0.8333vw;
+    font-weight: 300;
+}
+.nav_audio_volume{
+    width: 14.791666vw;
+    height: 1.875vw;
+    display: flex;
+    align-items: center;
+}
+#songVolume{
+    appearance: none;
+    width: 12.0833vw;
+    height: 0.4vw;
+    background: #9F9F9F;
+    border-radius: 0.4vw;
+}
+#songVolume::-webkit-slider-thumb{
+    appearance: none;
+    width: 0.833vw;
+    height: 0.833vw;
+    background: #DD0426;
+    border-radius: 0.4vw;
+}
+.audio_volume_text{
+    width: 2.80833vw;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: #747B83;
+    font-size: 1.04166vw;
+    font-weight: 300;
+}
+.nav_audio_reacts{
+    width: 7.08333vw;
+    height: 3.125vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1.5vw;
+}
+.nav_audio_reacts div{
+    width: 3.125vw;
+    height: 3.125vw;
+}
+.share{
+    background-image: url(img/share.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.heart{
+    background-image: url(img/heart.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.share:hover{
+    background-image: url(img/share_active.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.heart:hover{
+    background-image: url(img/heart_active.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.preloads{
+    position: absolute;
+}
+.preloads div:first-of-type{
+    background-image: url(img/share_active.png);
+}
+.preloads div:nth-of-type(2){
+    background-image: url(img/heart_active.png);
 }
 .nav_city{
     width: 10.625vw;

@@ -152,3 +152,33 @@ buttonPodcastThree.addEventListener("click", () => {
     buttonPodcastThree.style.backgroundColor = "#dd0426"
 })
 //linear-gradient(180deg, hsla(0, 0%, 100%, 0), #000000);
+
+let checkPress = false
+
+let playButtonPress = function(){
+    let playButton = document.getElementById('playButton')
+
+    if(checkPress == false){
+        playButton.outerHTML = '<img src="img/pause.png" alt="" onclick="playButtonPress()" id="playButton">'
+        checkPress = true
+        audio.play()
+    }
+    else if(checkPress == true){
+        playButton.outerHTML = '<img src="img/play.png" alt="" onclick="playButtonPress()" id="playButton">'
+        checkPress = false
+        audio.pause()
+    }
+}
+
+let audio = new Audio('img/Lobotomy Corporation OST - Binah Suppression (Sephirah Meltdown Theme).mp3');
+
+songVolume = document.getElementById('songVolume')
+volumePercent = document.getElementById('volumePercent')
+
+volumePercent.innerHTML = `${songVolume.value}%`
+audio.volume = songVolume.value * 0.01
+
+let changeVolume = function(){
+    volumePercent.innerHTML = `${songVolume.value}%`
+    audio.volume = songVolume.value * 0.01
+}
