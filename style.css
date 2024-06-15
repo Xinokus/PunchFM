@@ -89,20 +89,43 @@ nav{
     height: 1.875vw;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 #songVolume{
-    appearance: none;
-    width: 12.0833vw;
+    position: absolute;
+    width: inherit;
     height: 0.4vw;
     background: #9F9F9F;
     border-radius: 0.4vw;
 }
 #songVolume::-webkit-slider-thumb{
+    visibility: hidden;
+    width: 0.833vw;
+    height: 0.833vw;
+    background: #DD0426;
+    border-radius: 0.4vw;
+}
+#songVolume::-moz-range-thumb{
     appearance: none;
     width: 0.833vw;
     height: 0.833vw;
     background: #DD0426;
     border-radius: 0.4vw;
+    border: none;
+}
+.audio_input{
+    width: 12.0833vw;
+    height: 0.4vw;
+}
+.current_volume{
+    width: 12.0833vw;
+    height: 0.4vw;
+    position: absolute;
+    top: 4.65vw;
+    background-color: #DD0426;
+    border-radius: 0.4vw;
+    pointer-events: none;
+    z-index: 2;
 }
 .audio_volume_text{
     width: 2.80833vw;
@@ -136,16 +159,6 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
-}
-.share:hover{
-    background-image: url(img/share_active.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.heart:hover{
-    background-image: url(img/heart_active.png);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .preloads{
     position: absolute;

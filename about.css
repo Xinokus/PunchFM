@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+}
+header{
+    width: 100%;
+    height: 6.25vw;
+}
+nav{
+    width: 100%;
+    height: 6.25vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0.05vw 0.4vw 0.4vw rgba(0, 0, 0, 0.25);
+}
+.nav_logo{
+    width: 6.25vw;
+    height: 6.25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_logo a{
+    width: 5.208333vw;
+    height: 5.208333vw;
+}
+.nav_logo a img{
+    width: 5.208333vw;
+    height: 5.208333vw;
+}
+.nav_current_audio{
+    width: 34vw;
+    height: 6.25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_audio_song{
+    margin-top: 0.7vw;
+}
+.nav_audio_play{
+    width: 5.625vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_audio_play img{
+    width: 3.75vw;
+    height: 3.75vw;
+    cursor: pointer;
+    background-image: url(img/pause.png);
+    background-size: cover;
+}
+.nav_audio_logo{
+    width: 14.84375vw;
+    height: 2.70833vw;
+    display: flex;
+}
+.audio_logo{
+    width: 3.125vw;
+    height: 2.70833vw;
+}
+.audio_logo img{
+    width: 2.70833vw;
+    height: 2.70833vw;
+}
+.audio_text{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    color: #747B83;
+}
+.audio_text p:first-of-type{
+    font-size: 1.25vw;
+    font-weight: 500;
+}
+.audio_text p:last-of-type{
+    font-size: 0.8333vw;
+    font-weight: 300;
+}
+.nav_audio_volume{
+    width: 14.791666vw;
+    height: 1.875vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#songVolume{
+    position: absolute;
+    width: inherit;
+    height: 0.4vw;
+    background: #9F9F9F;
+    border-radius: 0.4vw;
+}
+#songVolume::-webkit-slider-thumb{
+    visibility: hidden;
+    width: 0.833vw;
+    height: 0.833vw;
+    background: #DD0426;
+    border-radius: 0.4vw;
+}
+#songVolume::-moz-range-thumb{
+    appearance: none;
+    width: 0.833vw;
+    height: 0.833vw;
+    background: #DD0426;
+    border-radius: 0.4vw;
+    border: none;
+}
+.audio_input{
+    width: 12.0833vw;
+    height: 0.4vw;
+}
+.current_volume{
+    width: 12.0833vw;
+    height: 0.4vw;
+    position: absolute;
+    top: 4.65vw;
+    background-color: #DD0426;
+    border-radius: 0.4vw;
+    pointer-events: none;
+    z-index: 2;
+}
+.audio_volume_text{
+    width: 2.80833vw;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: #747B83;
+    font-size: 1.04166vw;
+    font-weight: 300;
+}
+.nav_audio_reacts{
+    width: 7.08333vw;
+    height: 3.125vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1.5vw;
+}
+.nav_audio_reacts div{
+    width: 3.125vw;
+    height: 3.125vw;
+}
+.share{
+    background-image: url(img/share.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.heart{
+    background-image: url(img/heart.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.preloads{
+    position: absolute;
+}
+.preloads div:first-of-type{
+    background-image: url(img/share_active.png);
+}
+.preloads div:nth-of-type(2){
+    background-image: url(img/heart_active.png);
+}
+.nav_city{
+    width: 10.625vw;
+    height: 6.25vw;
+    font-size: 1.25vw;
+    color: #dd0426;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+}
+.nav_city div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.nav_city div img{
+    height: 0.5208333vw;
+}
+.nav_city div p{
+    margin-left: 0.25vw;
+}
+.nav_links{
+    width: 21vw;
+    height: 6.25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_telegram, .nav_vk, .nav_youtube{
+    width: 4.5vw;
+    height: 6.25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_telegram a, .nav_vk a, .nav_youtube a{
+    width: 3.125vw;
+    height: 3.125vw;
+} 
+.nav_telegram a img, .nav_vk a img, .nav_youtube a img{
+    width: 3.125vw;
+    height: 3.125vw;
+}
+.nav_navigation{
+    width: 11.75vw;
+    height: 6.25vw;
+    font-size: 1.875vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+}
+.nav_navigation div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.nav_navigation div img{
+    margin-left: 0.5vw;
+    margin-top: 0.5vw;
+    height: 1.041666vw;
+}
+.nav_city_choose{
+    position: absolute;
+    width: 17.3vw;
+    height: 26vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 7.03125vw;
+    right: 37.08vw;
+    box-shadow: 0 0.2vw 0.25vw 0.2vw rgba(0, 0, 0, 0.25);
+    border-radius: 2.08333vw;
+    transform: translateY(-50%);
+    transition: 0.5s all ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+}
+.nav_city_choose p{
+    height: calc(1.25vw * 1.2 + 0.78125vw);
+    font-size: 1.25vw;
+    line-height: calc(1.25vw * 1.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    color: #959595;
+}
+.nav_city_choose p:first-of-type{
+    color: #dd0426;
+}
+.nav_city_choose p:hover{
+    color: #dd0426;
+    cursor: pointer;
+}
+.nav_navigation_choose{
+    position: absolute;
+    width: 17.3vw;
+    height: 14.8vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 7.03125vw;
+    right: 5.4vw;
+    box-shadow: 0 0.2vw 0.25vw 0.2vw rgba(0, 0, 0, 0.25);
+    border-radius: 2.08333vw;
+    transform: translateY(-50%);
+    transition: 0.5s all ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+}
+.nav_navigation_choose a{
+    width: 14.6875vw;
+    height: calc(1.875vw * 1.2 + 1vw);
+    font-size: 1.875vw;
+    line-height: calc(1.875vw * 1.2);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-weight: 300;
+    color: #959595;
+    text-decoration: none;
+}
+.nav_navigation_choose a:first-of-type{
+    color: #dd0426;
+}
+.nav_navigation_choose a:hover{
+    color: #dd0426;
+}
+main{
+    width: 100%;
+    height: 41.875vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    width: 82.5%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+.main_text{
+    width: 100%;
+    height: 9.1666vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 0.4vw;
+}
+.main_text p{
+    font-size: 5vw;
+    color: #373737;
+    font-weight: 900;
+}
+.main_bigger_text{
+    width: 100%;
+}
+.main_bigger_text p{
+    font-size: 1.45833vw;
+    color: #373737;
+}
+footer{
+    width: 100%;
+    height: 5.208333vw;
+    background-color: #373737;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer_left{
+    width: 28.854166vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25vw;
+    color: white;
+    font-weight: 900;
+}
+.footer_middle{
+    width: 28.854166vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25vw;
+    color: white;
+    font-weight: 300;
+}
+.footer_right{
+    width: 28.854166vw;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.footer_right div{
+    width: 4.895833vw;
+    display: flex;
+    justify-content: end;
+}
+.footer_right div img{
+    width: 2.8125vw;
+    height: 2.8125vw;
+}
+.footer_left div:nth-of-type(2) p:nth-of-type(1){
+    color: #dd0426;
+}
+.footer_left div a{
+    text-decoration: none;
+    color: white;
+}

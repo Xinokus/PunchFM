@@ -172,13 +172,32 @@ let playButtonPress = function(){
 
 let audio = new Audio('img/Lobotomy Corporation OST - Binah Suppression (Sephirah Meltdown Theme).mp3');
 
-songVolume = document.getElementById('songVolume')
-volumePercent = document.getElementById('volumePercent')
+let songVolume = document.getElementById('songVolume')
+let volumePercent = document.getElementById('volumePercent')
+let currentVolume = document.getElementById('currentVolume')
+
+const alwaysTrue = true
 
 volumePercent.innerHTML = `${songVolume.value}%`
 audio.volume = songVolume.value * 0.01
+currentVolume.style.width = 12.0833 * (songVolume.value * 0.01) + 'vw'
 
 let changeVolume = function(){
+    currentVolume.style.width = 12.0833 * (songVolume.value * 0.01) + 'vw'
     volumePercent.innerHTML = `${songVolume.value}%`
     audio.volume = songVolume.value * 0.01
+}
+
+let heartButton = document.getElementById('heart')
+let heartPressed = false
+
+let clickHeart = function(){
+    if(heartPressed == false){
+        heartButton.style.backgroundImage = 'url(img/heart_active.png)'
+        heartPressed = true
+    }
+    else if(heartPressed == true){
+        heartButton.style.backgroundImage = 'url(img/heart.png)'
+        heartPressed = false
+    }
 }
