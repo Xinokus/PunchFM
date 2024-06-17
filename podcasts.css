@@ -68,6 +68,7 @@ nav{
 .audio_logo img{
     width: 2.70833vw;
     height: 2.70833vw;
+    position: absolute;
 }
 .audio_text{
     display: flex;
@@ -212,6 +213,7 @@ nav{
 .nav_telegram a img, .nav_vk a img, .nav_youtube a img{
     width: 3.125vw;
     height: 3.125vw;
+    position: absolute;
 }
 .nav_navigation{
     width: 11.75vw;
@@ -427,7 +429,7 @@ footer{
     width: 2.8125vw;
     height: 2.8125vw;
 }
-.footer_left div:nth-of-type(2) p:nth-of-type(1){
+.footer_left div:nth-of-type(0) p:nth-of-type(1){
     color: #dd0426;
 }
 .footer_left div a{

@@ -511,7 +511,7 @@ footer{
     height: 2.8125vw;
     position: absolute;
 }
-.footer_left div:first-of-type p:first-of-type{
+.footer_left div:nth-of-type(0) p:first-of-type{
     color: #dd0426;
 }
 .footer_left div a{
