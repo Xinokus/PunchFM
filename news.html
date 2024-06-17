@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости</title>
+    <link rel="stylesheet" href="news.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav_logo">
+                <a href="index.html"><img src="img/PUNCHFM.png" alt=""></a>
+            </div>
+            <div class="nav_current_audio">
+                <div class="nav_audio_play">
+                    <img src="img/play.png" alt="" onclick="playButtonPress()" id="playButton">
+                </div>
+                <div class="nav_audio_song">
+                    <div class="nav_audio_logo">
+                        <div class="audio_logo">
+                            <img src="img/music_logo.png" alt="">
+                        </div>
+                        <div class="audio_text">
+                            <p>Поезд сделал бум!</p>
+                            <p>Колов Дють</p>
+                        </div>
+                    </div>
+                    <div class="nav_audio_volume">
+                        <div class="audio_input">
+                            <div class="current_volume" id="currentVolume"></div>
+                            <input type="range" name="" value="50" id="songVolume" onpointermove="changeVolume()" onclick="changeVolume()">
+                        </div>
+                        <div class="audio_volume_text">
+                            <p id="volumePercent">50%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_audio_reacts">
+                    <a href=""><div class="share" id="share"></div></a>
+                    <div class="heart" onclick="clickHeart()" id="heart"></div>
+                </div>
+                <audio controls style="display: none;">
+                    <source src="img/Lobotomy Corporation OST - Binah Suppression (Sephirah Meltdown Theme).mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="nav_city">
+                <div id="city">
+                    <img src="img/arrow_red.png" alt="">
+                    <p id="cityMain">Москва / 102.3</p>
+                </div>
+            </div>
+            <div class="nav_links">
+                <div class="nav_telegram">
+                    <a href=""><img src="img/telegram_logo.png" alt=""></a>
+                </div>
+                <div class="nav_vk">
+                    <a href=""><img src="img/VK_logo.png" alt=""></a>
+                </div>
+                <div class="nav_youtube">
+                    <a href=""><img src="img/Youtube_logo 1.png" alt=""></a>
+                </div>
+            </div>
+            <div class="nav_navigation">
+                <div id="navigation">
+                    <p>Навигация</p>
+                    <img src="img/arrow_black.png" alt="">
+                </div>
+            </div>
+            <div class="nav_city_choose" id="nav_city_choose">
+                <p class="cityNumber">Москва / 102.3</p>
+                <p class="cityNumber">Санкт-Петербург / 102.3</p>
+                <p class="cityNumber">Калининград / 102.3</p>
+                <p class="cityNumber">Владивосток / 102.3</p>
+                <p class="cityNumber">Нижний Новгород / 102.3</p>
+                <p class="cityNumber">Казань / 102.3</p>
+                <p class="cityNumber">Краснодар / 102.3</p>
+                <p class="cityNumber">Екатеринбург / 102.3</p>
+                <p class="cityNumber">Уфа / 102.3</p>
+                <p class="cityNumber">Ростов-на-Дону / 102.3</p>
+                <p class="cityNumber">Омск / 102.3</p>
+            </div>
+            <div class="nav_navigation_choose" id="nav_navigation_choose">
+                <a href="index.html"><p>Главная</p></a>
+                <a href="news.html"><p>Новости</p></a>
+                <a href="composers.html"><p>Исполнители</p></a>
+                <a href="podcasts.html"><p>Подкасты</p></a>
+            </div>
+        </nav>
+        <div class="preloads">
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    <main>
+        <section class="section_news">
+            <div class="news_text">
+                <p>Новости</p>
+            </div>
+            <div class="news_main">
+                <div class="news_section_one">
+                    <div class="news_regular">
+                        <a href=""></a>
+                        <div class="news_gradient"></div>
+                        <img src="img/c5b4b942fe12113bbf91c04fe8cd 1.png" alt="">
+                        <p>Главный матч лета в 
+                            женском футболе 
+                            пройдёт при поддержке 
+                            «Русской Медиагруппы» </p>
+                    </div>
+                    <div class="news_regular">
+                        <a href=""></a>
+                        <div class="news_gradient"></div>
+                        <img src="img/b4f5202beef87086d0cc87b3b82a 1.png" alt="">
+                        <p>Отмена JLo: в чем 
+                            обвиняют певицу?</p>
+                    </div>
+                    <div class="news_big">
+                        <a href=""></a>
+                        <div class="news_gradient"></div>
+                        <img src="img/6fb676b48aaf22023798a65df833 1.png" alt="">
+                        <p>Суперфинал FONBET Кубка России в Лужниках прошёл 
+                            при инфоподдержке «Русской Медиагруппы»</p>
+                    </div>
+                </div>
+                <div class="news_section_two">
+                    <div class="news_regular">
+                        <a href=""></a>
+                        <div class="news_gradient"></div>
+                        <img src="img/123e9e15e8840fa91f5a7d458338 1.png" alt="">
+                        <p>Что такое Chillwave и 
+                            почему он должен 
+                            оказаться у каждого в 
+                            плейлисте?</p>
+                    </div>
+                    <div class="news_big">
+                        <a href=""></a>
+                        <div class="news_gradient"></div>
+                        <img src="img/04ee22e62b4f8697d6f9d3f67ea5 1.png" alt="">
+                        <p>«Русская Медиагруппа» и РФС заключили соглашение 
+                            о партнёрстве на площадке ПМЭФ’2024 </p>
+                    </div>
+                    <div class="news_regular">
+                        <a href=""></a>
+                        <div class="news_gradient"></div>
+                        <img src="img/1055c22cacdf6dc545ef1fb9fa08 1.png" alt="">
+                        <p>Как женщине правильно 
+                            построить карьеру в IT</p>
+                    </div>
+                </div>
+                <div class="news_section_three">
+                    <div class="news_regular">
+                        <a href=""></a>
+                        <div class="news_gradient"></div>
+                        <img src="img//feeef0c84e222e7a04013ae91d43 1.png" alt="">
+                        <p>Натали Портман 
+                            подозревают в романе 
+                            с молодым актёром</p>
+                    </div>
+                    <div class="news_regular">
+                        <a href=""></a>
+                        <div class="news_gradient"></div>
+                        <img src="img/690d585e9058d2e51292a0024278 1.png" alt="">
+                        <p>Топ безумств Канье 
+                            Уэста</p>
+                    </div>
+                    <div class="news_big">
+                        <a href=""></a>
+                        <div class="news_gradient"></div>
+                        <img src="img/4bd783f3e83eb218412826a0b64f 1.png" alt="">
+                        <p>«Россия моя»: MIA BOYKA представила новую 
+                            патриотическую песню</p>
+                    </div>
+                </div>
+            </div>
+            <div class="news_list">
+                <a href=""><img src="img/Polygon 5.png" alt=""></a>
+                <a href=""><p>1</p></a>
+                <a href=""><p>2</p></a>
+                <a href=""><p>3</p></a>
+                <a href=""><p>4</p></a>
+                <a href=""><p>5</p></a>
+                <a href=""><img src="img/Polygon 6.png" alt=""></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_left">
+            <div>
+                <a href="index.html"><p>Главная</p></a>
+            </div>
+            <div>
+                <a href="about.html"><p>О PunchFM</p></a>
+            </div>
+            <div>
+                <a href="contacts.html"><p>Контакты</p></a>
+            </div>
+        </div>
+        <div class="footer_middle">
+            <p>© Все права защищены. PunchFM</p>
+        </div>
+        <div class="footer_right">
+            <div>
+                <a href=""><img src="img/telegram_logo.png" alt=""></a>
+            </div>
+            <div>
+                <a href=""><img src="img/VK_logo.png" alt=""></a>
+            </div>
+            <div>
+                <a href=""><img src="img/Youtube_logo 1.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <script src="news.js"></script>
+</body>
+</html>

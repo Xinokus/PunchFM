@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="podcasts.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav_logo">
+                <a href="index.html"><img src="img/PUNCHFM.png" alt=""></a>
+            </div>
+            <div class="nav_current_audio">
+                <div class="nav_audio_play">
+                    <img src="img/play.png" alt="" onclick="playButtonPress()" id="playButton">
+                </div>
+                <div class="nav_audio_song">
+                    <div class="nav_audio_logo">
+                        <div class="audio_logo">
+                            <img src="img/music_logo.png" alt="">
+                        </div>
+                        <div class="audio_text">
+                            <p>Поезд сделал бум!</p>
+                            <p>Колов Дють</p>
+                        </div>
+                    </div>
+                    <div class="nav_audio_volume">
+                        <div class="audio_input">
+                            <div class="current_volume" id="currentVolume"></div>
+                            <input type="range" name="" id="songVolume" onpointermove="changeVolume()" onclick="changeVolume()">
+                        </div>
+                        <div class="audio_volume_text">
+                            <p id="volumePercent">100%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_audio_reacts">
+                    <a href=""><div class="share" id="share"></div></a>
+                    <div class="heart" onclick="clickHeart()" id="heart"></div>
+                </div>
+                <audio controls style="display: none;">
+                    <source src="img/Lobotomy Corporation OST - Binah Suppression (Sephirah Meltdown Theme).mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="nav_city">
+                <div id="city">
+                    <img src="img/arrow_red.png" alt="">
+                    <p id="cityMain">Москва / 102.3</p>
+                </div>
+            </div>
+            <div class="nav_links">
+                <div class="nav_telegram">
+                    <a href=""><img src="img/telegram_logo.png" alt=""></a>
+                </div>
+                <div class="nav_vk">
+                    <a href=""><img src="img/VK_logo.png" alt=""></a>
+                </div>
+                <div class="nav_youtube">
+                    <a href=""><img src="img/Youtube_logo 1.png" alt=""></a>
+                </div>
+            </div>
+            <div class="nav_navigation">
+                <div id="navigation">
+                    <p>Навигация</p>
+                    <img src="img/arrow_black.png" alt="">
+                </div>
+            </div>
+            <div class="nav_city_choose" id="nav_city_choose">
+                <p class="cityNumber">Москва / 102.3</p>
+                <p class="cityNumber">Санкт-Петербург / 102.3</p>
+                <p class="cityNumber">Калининград / 102.3</p>
+                <p class="cityNumber">Владивосток / 102.3</p>
+                <p class="cityNumber">Нижний Новгород / 102.3</p>
+                <p class="cityNumber">Казань / 102.3</p>
+                <p class="cityNumber">Краснодар / 102.3</p>
+                <p class="cityNumber">Екатеринбург / 102.3</p>
+                <p class="cityNumber">Уфа / 102.3</p>
+                <p class="cityNumber">Ростов-на-Дону / 102.3</p>
+                <p class="cityNumber">Омск / 102.3</p>
+            </div>
+            <div class="nav_navigation_choose" id="nav_navigation_choose">
+                <a href="index.html"><p>Главная</p></a>
+                <a href="news.html"><p>Новости</p></a>
+                <a href="composers.html"><p>Исполнители</p></a>
+                <a href="podcasts.html"><p>Подкасты</p></a>
+            </div>
+        </nav>
+        <div class="preloads">
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    <main>
+        <section class="section_podcasts">
+            <div class="podcasts_text">
+                <p>Подкасты</p>
+            </div>
+            <div class="podcasts_main">
+                <div class="podcasts_line">
+                    <div class="podcasts_point">
+                        <a href=""><img src="img/podcast1.png" alt=""></a>
+                    </div>
+                    <div class="podcasts_point">
+                        <a href=""><img src="img/podcast2.png" alt=""></a>
+                    </div>
+                    <div class="podcasts_point">
+                        <a href=""><img src="img/podcast3.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="podcasts_line">
+                    <div class="podcasts_point">
+                        <a href=""><img src="img/podcast1.png" alt=""></a>
+                    </div>
+                    <div class="podcasts_point">
+                        <a href=""><img src="img/podcast2.png" alt=""></a>
+                    </div>
+                    <div class="podcasts_point">
+                        <a href=""><img src="img/podcast3.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="podcasts_line">
+                    <div class="podcasts_point">
+                        <a href=""><img src="img/podcast1.png" alt=""></a>
+                    </div>
+                    <div class="podcasts_point">
+                        <a href=""><img src="img/podcast2.png" alt=""></a>
+                    </div>
+                    <div class="podcasts_point">
+                        <a href=""><img src="img/podcast3.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="podcasts_list">
+                <a href=""><img src="img/Polygon 5.png" alt=""></a>
+                <a href=""><p>1</p></a>
+                <a href=""><p>2</p></a>
+                <a href=""><p>3</p></a>
+                <a href=""><p>4</p></a>
+                <a href=""><p>5</p></a>
+                <a href=""><img src="img/Polygon 6.png" alt=""></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_left">
+            <div>
+                <a href="index.html"><p>Главная</p></a>
+            </div>
+            <div>
+                <a href="about.html"><p>О PunchFM</p></a>
+            </div>
+            <div>
+                <a href="contacts.html"><p>Контакты</p></a>
+            </div>
+        </div>
+        <div class="footer_middle">
+            <p>© Все права защищены. PunchFM</p>
+        </div>
+        <div class="footer_right">
+            <div>
+                <a href=""><img src="img/telegram_logo.png" alt=""></a>
+            </div>
+            <div>
+                <a href=""><img src="img/VK_logo.png" alt=""></a>
+            </div>
+            <div>
+                <a href=""><img src="img/Youtube_logo 1.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <script src="podcasts.js"></script>
+</body>
+</html>
