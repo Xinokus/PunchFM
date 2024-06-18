@@ -128,24 +128,24 @@ buttonPodcastOne = document.getElementById('sliderPodcastOne');
 buttonPodcastTwo = document.getElementById('sliderPodcastTwo');
 buttonPodcastThree = document.getElementById('sliderPodcastThree');
 
-movePodcastRight = 68.48958333 + 3.671875 * 2
+movePodcastRight = 100
 
 buttonPodcastOne.addEventListener("click", () => {
-    podcastSlider.style.right = 3.671875 + "vw"
+    podcastSlider.style.right = 0 + "%"
 
     buttonPodcastOne.style.backgroundColor = "#dd0426"
     buttonPodcastTwo.style.backgroundColor = "#9F9F9F"
     buttonPodcastThree.style.backgroundColor = "#9F9F9F"
 })
 buttonPodcastTwo.addEventListener("click", () => {
-    podcastSlider.style.right = 3.671875 + movePodcastRight + "vw"
+    podcastSlider.style.right = movePodcastRight + "%"
 
     buttonPodcastOne.style.backgroundColor = "#9F9F9F"
     buttonPodcastTwo.style.backgroundColor = "#dd0426"
     buttonPodcastThree.style.backgroundColor = "#9F9F9F"
 })
 buttonPodcastThree.addEventListener("click", () => {
-    podcastSlider.style.right = 3.671875 + movePodcastRight * 2 + "vw"
+    podcastSlider.style.right = movePodcastRight * 2 + "%"
 
     buttonPodcastOne.style.backgroundColor = "#9F9F9F"
     buttonPodcastTwo.style.backgroundColor = "#9F9F9F"

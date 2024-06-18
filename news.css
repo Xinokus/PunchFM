@@ -1,4 +1,189 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@media screen and (max-width: 768px){
+    body header{
+        width: 100%;
+        height: 8.333vw;
+    }
+    header nav{
+        height: 8.333vw;
+    }
+    nav .nav_logo{
+        height: 8.333vw;
+        width: 8.333vw;
+    }
+    nav .nav_logo a{
+        width: 7.8125vw;
+        height: 7.8125vw;
+    }
+    nav .nav_logo a img{
+        width: 7.8125vw;
+        height: 7.8125vw;
+    }
+    nav .nav_current_audio{
+        width: 6.25vw;
+        height: 6.25vw;
+        margin-left: 6.640625vw;
+        margin-right: 5.208333vw;
+    }
+    nav .nav_audio_play{
+        width: 6.25vw;
+        height: 6.25vw;
+    }
+    nav .nav_audio_play img{
+        width: 6.25vw;
+        height: 6.25vw;
+    }
+    nav .nav_audio_logo{
+        width: 6.25vw;
+        height: 6.25vw;
+    }
+    nav .audio_logo{
+        display: none;
+    }
+    nav .audio_text{
+        display: none;
+    }
+    nav .nav_audio_volume{
+        display: none;
+    }
+    nav .nav_audio_song{
+        display: none;
+    }
+    nav .nav_audio_reacts{
+        display: none;
+    }
+    nav .nav_city{
+        width: 16.92708333vw;
+    }
+    nav .nav_city div img{
+        width: 1.041666vw;
+    }
+    nav .nav_city div p{
+        width: 14.84375vw;
+        font-size: 2.08333vw;
+    }
+    nav .nav_links{
+        display: none;
+    }
+    nav .nav_navigation{
+        width: 15.625vw;
+        margin-left: 24.21875vw;
+    }
+    nav .nav_navigation div p{
+        font-size: 2.604166vw;
+    }
+    nav .nav_city_choose{
+        width: 27.86458333vw;
+        height: 40.104166vw;
+        top: 9.63541666vw;
+        left: 30.208333vw;
+        font-size: 2.0833vw;
+        z-index: 50;
+    }
+    nav .nav_city_choose p{
+        font-size: 2.08333vw;
+        height: calc(2.08333vw * 1.2 + 1.04166vw);
+        line-height: calc(2.08333vw * 1.2);
+    }
+    nav .nav_navigation_choose{
+        width: 23.1770833vw;
+        height: 18.359375vw;
+        top: 9.63541666vw;
+        left: 70.8333vw;
+        z-index: 50;
+    }   
+    nav .nav_navigation_choose a{
+        width: 18.4479166vw;
+        font-size: 2.604166vw;
+        height: calc(2.604166vw * 1.2 + 1.04166vw);
+        line-height: calc(2.604166vw * 1.2);
+    }
+    main .section_news{
+        height: 91.6666vw;
+    }
+    main .news_section_one, main .news_section_two, main .news_section_three{
+        width: 82.8125vw;
+        height: calc(73.307291666vw / 3);
+    }
+    main .news_regular{
+        width: 23.046875vw;
+        height: 23.046875vw;
+        font-size: 1.5625vw;
+    }
+    main .news_regular div{
+        width: 23.046875vw;
+        height: 23.046875vw;
+        border-radius: 1.041666vw;
+    }
+    main .news_regular a{
+        width: 23.046875vw;
+        height: 23.046875vw;
+        border-radius: 1.041666vw;
+    }
+    main .news_regular p{
+        margin: 1.3020833vw;
+    }
+    main .news_regular img{
+        width: 23.046875vw;
+        height: 23.046875vw;
+        border-radius: 1.041666vw;
+    }
+    main .news_big{
+        width: 57.161458333vw;
+        height: 23.046875vw;
+        font-size: 1.5625vw;
+    }
+    main .news_big div{
+        width: 57.161458333vw;
+        height: 23.046875vw;
+        border-radius: 1.041666vw;
+    }
+    main .news_big a{
+        width: 57.161458333vw;
+        height: 23.046875vw;
+        border-radius: 1.041666vw;
+    }
+    main .news_big p{
+        margin: 1.3020833vw;
+    }
+    main .news_big img{
+        width: 57.161458333vw;
+        height: 23.046875vw;
+        border-radius: 1.041666vw;
+    }
+    main .news_text{
+        font-size: 6.25vw;
+        height: 10.41666vw;
+    }
+    main .news_section_one > div:first-of-type, main .news_section_two > div:first-of-type, main .news_section_three > div:first-of-type{
+        display: none;
+    }
+    body footer{
+        height: 6.5104166vw;
+    }
+    footer .footer_left{
+        width: 30.9895833vw;
+        font-size: 1.5625vw;
+    }
+    footer .footer_middle{
+        width: 25.91145833vw;
+        font-size: 1.5625vw;
+    }
+    footer .footer_right{
+        height: 6.5104166vw;
+    }
+    footer .footer_right div{
+        width: 6.25vw;
+    }
+    footer .footer_right div a{
+        width: 4.1666vw;
+        height: 4.1666vw;
+    }
+    footer .footer_right div img{
+        width: 4.1666vw;
+        height: 4.1666vw;
+    }
+}
 *{
     margin: 0;
     padding: 0;
