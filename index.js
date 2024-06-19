@@ -45,6 +45,7 @@ buttonFifth = document.getElementById('five');
 slider = document.getElementById('slider');
 
 moveLeft = 68.666
+slider.style.left = -86.666 + "vw"
 
 buttonFirst.addEventListener("click", () => {
     slider.style.left = -86.666 + "vw"
