@@ -1,4 +1,121 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    body header{
+        width: 100%;
+        height: 53.73828125vw;
+    }
+    header nav{
+        height: 8.7890625vw;
+    }
+    nav .nav_logo{
+        height: 8.203125vw;
+        width: 8.203125vw;
+    }
+    nav .nav_logo a{
+        width: 8.203125vw;
+        height: 8.203125vw;
+    }
+    nav .nav_logo a img{
+        width: 8.203125vw;
+        height: 8.203125vw;
+    }
+    nav .nav_current_audio{
+        width: 27.24609375vw;
+        height: 5.859375vw;
+        margin-left: 3.80859375vw;
+        margin-right: 1vw;
+    }
+    nav .nav_audio_play{
+        width: 5.859375vw;
+        height: 5.859375vw;
+    }
+    nav #volumePercent{
+        display: none;
+    }
+    nav .nav_audio_play img{
+        width: 5.859375vw;
+        height: 5.859375vw;
+    }
+    nav .nav_audio_logo{
+        width: 19.3359375vw;
+        height: 3.7109375vw;
+    }
+    nav .audio_text p:first-of-type{
+        font-size: 1.953125vw;
+    }
+    nav .audio_text p:last-of-type{
+        margin-top: -0.5vw;
+        font-size: 1.3671875vw;
+    }
+    nav .nav_audio_song{
+        width: 19.3359375vw;
+        height: 100%;
+        margin-left: 1vw;
+    }
+    nav .audio_input{
+        width: 12.08333vw;
+        margin-left: 0.5vw;
+    }
+    nav #currentVolume{
+        width: 12.08333vw;
+        top: 6.25vw;
+    }
+    nav .audio_text{
+        width: 19.3359375vw;
+    }
+    nav .audio_logo{
+        display: none;
+    }
+    nav .nav_audio_reacts{
+        display: none;
+    }
+    nav .nav_city{
+        width: 16.92708333vw;
+    }
+    nav .nav_city div img{
+        width: 1.041666vw;
+    }
+    nav .nav_city div p{
+        width: 14.84375vw;
+        font-size: 2.08333vw;
+    }
+    nav .nav_links{
+        display: none;
+    }
+    nav .nav_navigation{
+        width: 15.625vw;
+        margin-left: 10.25390625vw;
+    }
+    nav .nav_navigation div p{
+        font-size: 2.604166vw;
+    }
+    nav .nav_city_choose{
+        width: 27.86458333vw;
+        height: 40.104166vw;
+        top: 9.63541666vw;
+        left: 43.91640625vw;
+        font-size: 2.0833vw;
+        z-index: 50;
+    }
+    nav .nav_city_choose p{
+        font-size: 2.08333vw;
+        height: calc(2.08333vw * 1.2 + 1.04166vw);
+        line-height: calc(2.08333vw * 1.2);
+    }
+    nav .nav_navigation_choose{
+        width: 23.1770833vw;
+        height: 18.359375vw;
+        top: 9.63541666vw;
+        left: 71.93125vw;
+        z-index: 50;
+    }
+    nav .nav_navigation_choose a{
+        width: 18.4479166vw;
+        font-size: 2.604166vw;
+        height: calc(2.604166vw * 1.2 + 1.04166vw);
+        line-height: calc(2.604166vw * 1.2);
+    }
+}
 @media screen and (min-width: 426px) and (max-width: 768px){
     body header{
         width: 100%;
