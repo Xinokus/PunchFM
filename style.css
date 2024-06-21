@@ -345,7 +345,7 @@
         font-size: 1.5625vw;
     }
     footer .footer_middle{
-        width: 25.91145833vw;
+        width: 27.91145833vw;
         font-size: 1.5625vw;
     }
     footer .footer_right{
@@ -355,12 +355,12 @@
         width: 6.25vw;
     }
     footer .footer_right div a{
-        width: 4.1666vw;
-        height: 4.1666vw;
+        width: 3.1666vw;
+        height: 3.1666vw;
     }
     footer .footer_right div img{
-        width: 4.1666vw;
-        height: 4.1666vw;
+        width: 3.1666vw;
+        height: 3.1666vw;
     }
 }
 @media screen and (min-width: 1px) and (max-width: 425px){
@@ -534,32 +534,32 @@
         font-size: 2.6041666vw;
     }
     main .section_people{
-        height: 121.88235294vw;
+        height: 100.88235294vw;
     }
     .section_people .people_together .people_person:nth-of-type(3), .section_people .people_together .people_person:nth-of-type(6){
         display: none;
     }
     .section_people .people_main{
-        height: 93.17647vw;
+        height: 73.17647vw;
         width: 88%;
     }
     .section_people .people_together{
-        height: 93.17647vw;
+        height: 73.17647vw;
     }
     .section_people .people_person{
         height: 50%;
         width: 50%;
     }
     .section_people .people_person div img{
-        width: 38.8235294vw;
-        height: 38.8235294vw;
+        width: 26.8235294vw;
+        height: 26.8235294vw;
     }
     .section_people .people_person div p{
         font-size: 3.764705vw;
     }
     .section_people .people_person div a{
-        width: 38.8235294vw;
-        height: 38.8235294vw;
+        width: 26.8235294vw;
+        height: 26.8235294vw;
         border-radius: 15.625vw;
     }
     .section_people .people_main_slider{
@@ -610,7 +610,7 @@
         font-size: 1.5625vw;
     }
     footer .footer_middle{
-        width: 25.91145833vw;
+        width: 27.91145833vw;
         font-size: 1.5625vw;
     }
     footer .footer_right{
@@ -620,12 +620,12 @@
         width: 6.25vw;
     }
     footer .footer_right div a{
-        width: 4.1666vw;
-        height: 4.1666vw;
+        width: 3.1666vw;
+        height: 3.1666vw;
     }
     footer .footer_right div img{
-        width: 4.1666vw;
-        height: 4.1666vw;
+        width: 3.1666vw;
+        height: 3.1666vw;
     }
 }
 *{
@@ -839,12 +839,12 @@ nav{
     align-items: center;
 }
 .nav_telegram a, .nav_vk a, .nav_youtube a{
-    width: 3.125vw;
-    height: 3.125vw;
+    width: 2.625vw;
+    height: 2.625vw;
 } 
 .nav_telegram a img, .nav_vk a img, .nav_youtube a img{
-    width: 3.125vw;
-    height: 3.125vw;
+    width: 2.625vw;
+    height: 2.625vw;
     position: absolute;
 }
 .nav_navigation{
@@ -905,15 +905,15 @@ nav{
 }
 .nav_navigation_choose{
     position: absolute;
-    width: 17.3vw;
-    height: 14.8vw;
+    width: 13.3vw;
+    height: 13.8vw;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     top: 7.03125vw;
-    right: 5.4vw;
+    right: 7.4vw;
     box-shadow: 0 0.2vw 0.25vw 0.2vw rgba(0, 0, 0, 0.25);
     border-radius: 2.08333vw;
     transform: translateY(-50%);
@@ -924,11 +924,11 @@ nav{
 }
 .nav_navigation_choose a{
     width: 14.6875vw;
-    height: calc(1.875vw * 1.2 + 1vw);
-    font-size: 1.875vw;
-    line-height: calc(1.875vw * 1.2);
+    height: calc(1.675vw * 1.2 + 1vw);
+    font-size: 1.675vw;
+    line-height: calc(1.675vw * 1.2);
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     font-weight: 300;
     color: #959595;
@@ -981,14 +981,14 @@ nav{
 }
 .header_slider_buttons{
     width: 100%;
-    height: 1.25vw;
+    height: 1vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .header_slider_button{
-    width: 3.333vw;
-    height: 1.25vw;
+    width: 2.25vw;
+    height: 1vw;
     background-color: #959595;
     border-radius: 0.6vw;
     margin-left: 0.3vw;
@@ -1181,7 +1181,7 @@ nav{
 }
 .section_people{
     width: 100%;
-    height: 61.145833vw;
+    height: 55.145833vw;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -1189,13 +1189,13 @@ nav{
 }
 .people_main{
     width: 78%;
-    height: 40.0625vw;
+    height: 34.0625vw;
     display: flex;
     overflow: hidden;
 }
 .people_main_slider{
     width: 500%;
-    height: 40.0625vw;
+    height: 34.0625vw;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -1205,7 +1205,7 @@ nav{
 }
 .people_together{
     width: 100%;
-    height: 40.0625vw;
+    height: 34.0625vw;
     display: flex;
     flex-wrap: wrap;
 }
@@ -1218,8 +1218,9 @@ nav{
     flex-direction: column;
 }
 .people_person div img{
-    width: 15.833vw;
-    height: 15.833vw;
+    width: 13vw;
+    height: 13vw;
+    border-radius: 15.625vw;
 }
 .people_person div p{
     font-size: 1.666vw;
@@ -1227,9 +1228,8 @@ nav{
     font-weight: 700;
 }
 .people_person div a{
-    position: absolute;
-    width: 15.833vw;
-    height: 15.833vw;
+    width: 13vw;
+    height: 13vw;
     border-radius: 15.625vw;
 }
 .people_slider{
@@ -1356,8 +1356,14 @@ nav{
     justify-content: center;
     align-items: center;
 }
-.radio_video div img{
+.radio_video div img:first-of-type{
+    width: 66.666vw;
+    height: 37.5vw;
+    position: absolute;
+}
+.radio_video div img:last-of-type{
     width: 6.45833vw;
+    z-index: 2;
 }
 footer{
     width: 100%;
@@ -1400,12 +1406,12 @@ footer{
     justify-content: end;
 }
 .footer_right div a{
-    width: 2.8125vw;
-    height: 2.8125vw;
+    width: 2.3125vw;
+    height: 2.3125vw;
 }
 .footer_right div img{
-    width: 2.8125vw;
-    height: 2.8125vw;
+    width: 2.3125vw;
+    height: 2.3125vw;
     position: absolute;
 }
 .footer_left div:first-of-type p:first-of-type{
